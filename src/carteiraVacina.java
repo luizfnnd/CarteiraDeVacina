@@ -9,9 +9,9 @@ import java.util.Scanner;
 public class carteiraVacina {
     private static Map<Integer, FichaPaciente> fichas = new HashMap<>();
     private static int proximoId = 1;
+    private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         int opcao;
 
         // Loop principal que mantém o programa em execução até que o usuário escolha sair
@@ -27,7 +27,8 @@ public class carteiraVacina {
 
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
-            scanner.nextLine(); 
+            scanner.nextLine();
+
             switch (opcao) {
                 case 1:
                     cadastrarFicha();
@@ -42,14 +43,11 @@ public class carteiraVacina {
                     System.out.println("Opção inválida!");
             }
         } while (opcao != 0);
-
-        scanner.close();
     }
     
     // Método para cadastrar uma nova ficha de paciente
     // #3
     public static void cadastrarFicha() {
-        Scanner scanner = new Scanner(System.in);
 
         System.out.println();
         System.out.println("== Preencha os dados do paciente ==");
@@ -93,13 +91,10 @@ public class carteiraVacina {
         System.out.println();
         System.out.println("Ficha cadastrada com sucesso! ID do paciente: " + ficha.getId());
         System.out.println();
-
-        scanner.close();
     }
     
     // Método para visualizar a ficha de um paciente
     public static void visualizarFicha() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Digite o ID do paciente: ");
         int id = scanner.nextInt();
         scanner.nextLine(); // Consumir a quebra de linha
@@ -122,7 +117,6 @@ public class carteiraVacina {
         } else {
             System.out.println("Paciente não encontrado com o ID fornecido.");
         }
-        scanner.close();
     }
 }
 
