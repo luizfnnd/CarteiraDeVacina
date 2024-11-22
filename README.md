@@ -22,3 +22,8 @@ O algoritmo segue três fluxos principais de processo: **Cadastro de Ficha**, **
 
 ### Finalização do Programa:
 1. Um menu será exibido, e o programa será finalizado caso o usuário pressione **0**.
+
+## Correção/Melhorias no código
+### V1.1 – CORREÇÃO – 22/11/2024
+Corrigido o conflito na entrada de dados do usuário. O erro ocorreu devido a criação de múltiplos objetos Scanner dentro de cada método. A correção foi eliminar os objetos Scanner dentro dos métodos e instanciar apenas um, fora do bloco main.
+
