@@ -26,7 +26,7 @@ O algoritmo segue três fluxos principais de processo: **Cadastro de Ficha**, **
 ## v2 - Refatoração do código e Listagem de Fichas
 
 ### Refatoração
-1. Classes e metódos foram separados em pastas model e methods.
+Classes e metódos foram separados em pastas model e methods.
 
 ### Listagem de Fichas
 Agora é possivel visualizar fichas cadastradas no sistema e ID vinculado.
