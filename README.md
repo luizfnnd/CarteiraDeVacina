@@ -22,3 +22,5 @@ O algoritmo segue três fluxos principais de processo: **Cadastro de Ficha**, **
 
 ### Finalização do Programa:
 1. Um menu será exibido, e o programa será finalizado caso o usuário pressione **0**.
+
+## v2 - Refatoração do código e Listagem de Fichas
