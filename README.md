@@ -24,3 +24,10 @@ O algoritmo segue três fluxos principais de processo: **Cadastro de Ficha**, **
 1. Um menu será exibido, e o programa será finalizado caso o usuário pressione **0**.
 
 ## v2 - Refatoração do código e Listagem de Fichas
+
+### Refatoração
+1. Classes e metódos foram separados em pastas model e methods.
+
+### Listagem de Fichas
+Agora é possivel visualizar fichas cadastradas no sistema e ID vinculado.
+Melhoria facilita na busca da ficha completa do paciente, visto que é possível listar todos pacientes e seus ID vinculado.
